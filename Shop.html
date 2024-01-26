@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummerStride | Shoes Store</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/hover-master/css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/tmplt/css/templatemo.css">
+    <link rel="stylesheet" href="assets/tmplt/css/custom.css">
+
+    <style>
+        #my-products{
+            padding-top: 3rem;
+        }
+        .form-control {
+            height: 30px;
+            font-size: 12px;
+        }
+
+        .btn-outline-success {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .product-details {
+            padding: 10px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 12px;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .product-description {
+            font-size: 10px;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .btn-buy {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -10px; /* Add margin to the row for better spacing */
+        }
+
+        .col {
+            flex: 0 0 calc(33.3333% - 20px); /* Updated flex and margin for better spacing */
+            margin: 0 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+    <!-- title of site -->
+    <title>SummerStride</title>
+    
+</head>
+<body>
+    <!-- Navbar Start -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/wht.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item hvr-pulse-grow">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item hvr-pulse-grow">
+                            <a class="nav-link inactive" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item hvr-pulse-grow">
+                            <a class="nav-link inactive" href="Shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item hvr-pulse-grow">
+                            <a class="nav-link inactive" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar End -->
+
+    <section id="my-products" class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct1.png" alt="Produk 1">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike Invincible 3</h4>
+                        <p class="product-price">Rp 2,849,000</p>
+                        <p class="product-description">With maximum cushioning to support every mile, the Invincible 3 has our highest level of comfort underfoot. 
+                            Its plush and bouncy ZoomX foam helps you stay stable and fresh. In other words—it's going to feel good all day, whatever you're doing.</p>
+                        <a href="Order.html"><button class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct2.png" alt="Produk 2">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike InfinityRN 4</h4>
+                        <p class="product-price">Rp 3,049,000</p>
+                        <p class="product-description">With supportive cushioning built for a smooth run, the Nike InfinityRN 4 is a brand-new take on a familiar favourite. 
+                            It's made from our all-new Nike ReactX foam, which gives you 13% more energy return compared to Nike React foam, to help you stay fresh and bouncy.</p>
+                        <a href="Order.html"><button class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct3.png" alt="Produk 3">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike Alphafly 3</h4>
+                        <p class="product-price">Rp 4,089,000</p>
+                        <p class="product-description">Fine-tuned for marathon speed, the Alphafly 3 helps push you beyond what you thought possible. 
+                            Three innovative technologies power your run: a double Air Zoom units helps launch you into your next step; 
+                            a full-length carbon-fibre plate propels you forwards with ease.</p>
+                        <a href="Order.html"><button  class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct4.png" alt="Produk 4">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike Pegasus Trail 4</h4>
+                        <p class="product-price">Rp 1,999,000</p>
+                        <p class="product-description">Running is your daily ritual, taking you from road to trail as you seek out new adventures and goals. 
+                            Let the Nike Pegasus Trail 4 take you there and back again with its supportive and springy feel. 
+                            Underfoot traction keeps you going over rocky terrain</p>
+                        <a href="Order.html"><button class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct5.jpg" alt="Produk 5">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike Kiger 9</h4>
+                        <p class="product-price">Rp 1,868,000</p>
+                        <p class="product-description">When approaching rocky and technical terrain, go with the comfort and speed of the Kiger 9, 
+                            there for every unexpected twist and tight turn. Equipped with full-length Nike React foam and a revamped breathable 
+                            upper, this agile, quick trainer helps keep you zigzagging.</p>
+                        <a href="Order.html"><button class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img class="product-image" src="img/prdct6.png" alt="Produk 6">
+                    <div class="product-details">
+                        <h4 class="product-title">Nike Juniper Trail 2</h4>
+                        <p class="product-price">Rp 1,149,000</p>
+                        <p class="product-description">Break away from the norm and dash up that tempting trail in the Nike Juniper Trail 2. 
+                            Durable material on the top and tough traction on the bottom give you a consistent, 
+                            confident ride for those off-road runs calling your name.</p>
+                        <a href="Order.html"><button class="btn-buy">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tambahkan produk lainnya di sini sesuai kebutuhan -->
+        </div>
+    </section>
+
+<!-- Footer Start -->
+<footer>
+    <div class="footer-content">
+        <img class="logo-bottom" src="img/wht.png" alt="">
+        <br>
+        <p>"Step into Style, Stride through Summer - Summerstride, Where Every Step Tells a Fashion Tale!"</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <p>copyright &copy;2024 SummmerStride. designed by <span>Aldaka</span></p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<script src="other-assets/js/jquery.js"></script>
+        
+<!--modernizr.min.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<!--bootstrap.min.js-->
+<script src="other-assets/js/bootstrap.min.js"></script>
+
+<!-- bootsnav js -->
+<script src="other-assets/js/bootsnav.js"></script>
+
+<!--owl.carousel.js-->
+<script src="other-assets/js/owl.carousel.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<!--Custom JS-->
+<script src="other-assets/js/custom.js"></script>
+
+    <!-- Bootsrap java -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/tmplt/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/tmplt/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/tmplt/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/tmplt/js/templatemo.js"></script>
+    <script src="assets/tmplt/js/custom.js"></script>
+</body>
+
+</html>
